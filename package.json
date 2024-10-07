@@ -1,6 +1,6 @@
 {
   "name": "airstack-frame-verify-web-light",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Super light 0 dependencies function to verify farcaster frames with Airstack, made to work in constrained environments like web workers.",
   "repository": "https://github.com/andrei0x309/airstack-frame-verify-web-light",
   "author": "Andrei O",
