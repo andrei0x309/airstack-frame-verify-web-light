@@ -1,0 +1,43 @@
+{
+  "name": "airstack-frame-verify-web-light",
+  "version": "0.1.1",
+  "description": "Super light 0 dependencies function to verify farcaster frames with Airstack, made to work in constrained environments like web workers.",
+  "repository": "https://github.com/andrei0x309/airstack-frame-verify-web-light",
+  "author": "Andrei O",
+  "license": "MIT",
+  "private": false,
+  "keywords": [
+    "farcaster",
+    "airstack",
+    "airstack frame",
+    "airstack frame validation",
+    "airstack frame verification",
+    "web light",
+    "web worker"
+  ],
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "lint": "eslint --ext .vue --ignore-path .gitignore --fix src",
+    "release": "bun run ./scripts/version-release.ts",
+    "postversion": "npm publish",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.8",
+    "@types/node": "^20.14.10",
+    "eslint": "^9.6.0",
+    "typescript": "^5.5.3"
+  }
+}
